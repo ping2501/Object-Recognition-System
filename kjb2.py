@@ -53,7 +53,7 @@ BS = 32
 
 # grab the image paths and randomly shuffle them
 print("[INFO] loading images...")
-imagePaths = glob.glob("C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\dataset\\*\\*.jpg")
+imagePaths = glob.glob("give your image path here.jpg") #your own path
 
 random.seed(42)
 random.shuffle(imagePaths)
@@ -136,11 +136,11 @@ for a in Res:
 
 # save the model to disk
 print("[INFO] serializing network...")
-model.save_weights("C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\model1\\aa.h5")
+model.save_weights("ADD YOUR OWN PATH\\model1\\aa.h5")
 
 json_string = model.to_json()
-open("C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\model1\\aa.json", 'w').write(json_string)
-model.save_weights("C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\model1\\aa.h5")
+open("YOUR PATH HERE\\model1\\aa.json", 'w').write(json_string) #add your own path
+model.save_weights("ADD YOUR OWN PATH\\model1\\aa.h5")
 
 # plot the training loss and accuracy
 plt.style.use("ggplot")

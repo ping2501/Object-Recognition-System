@@ -41,7 +41,7 @@ BS = 20
 
 # grab the image paths and randomly shuffle them
 print("[INFO] loading images...")
-imagePaths = glob.glob("C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\t\\*.jpg")
+imagePaths = glob.glob("ADD YOUR OWN PATH\\t\\*.jpg")
 
 random.seed(42)
 
@@ -66,8 +66,8 @@ aug = ImageDataGenerator(rotation_range=25, width_shift_range=0.1,
 	height_shift_range=0.1, shear_range=0.2, zoom_range=0.2,
 	horizontal_flip=True, fill_mode="nearest")
 
-model = model_from_json(open("C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\model7\\aa.json").read())
-model.load_weights('C:\\Users\\KD\\PycharmProjects\\HandGestureRecognition\\model7\\aa.h5')
+model = model_from_json(open("ADD YOUR OWN PATH\\model7\\aa.json").read())
+model.load_weights('ADD YOUR OWN PATH\\model7\\aa.h5')
 # initialize the optimizer (SGD is sufficient)
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 
